@@ -44,6 +44,15 @@ wget https://files.pythonhosted.org/packages/45/ae/8a0ad77defb7cc903f09e551d88b4
 tar xvzf pip-18.1.tar.gz
 cd pip-18.1 # ~/.naomi/local/pip-18.1
 ~/.naomi/local/bin/python setup.py install  # specify the path to the python you installed above
+cd .. # ~/.naomi/local
+
+wget https://github.com/jaqx0r/pymad/archive/debian/0.10-2.zip -O mad-0.10-2.zip
+unzip mad-0.10-2.zip
+cd pymad-debian-0.10-2 # ~/.naomi/local/pymad-debian-0.10-2
+~/.naomi/local/bin/python config_unix.py --prefix ~/.naomi/local
+~/.naomi/local/bin/python setup.py build
+~/.naomi/local/bin/python setup.py install --prefix ~/.naomi/local
+cd .. # ~/.naomi/local
 
 # install naomi & dependancies
 echo "Returning to $NAOMI_DIR"

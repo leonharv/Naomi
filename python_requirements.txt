@@ -11,7 +11,6 @@ pyalsaaudio
 
 #other modules
 python-slugify==1.2.5
-mad==0.2.2
 
 # Pocketsphinx STT engine
 cmuclmtk==0.1.5
