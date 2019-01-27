@@ -19,10 +19,10 @@ class GoogleTTSPlugin(plugin.TTSPlugin):
 
         language = orig_language.lower()
 
-        if language not in gtts.gTTS.LANGUAGES:
+        if language not in gtts.lang.tts_langs().keys():
             language = language.split('-')[0]
 
-        if language not in gtts.gTTS.LANGUAGES:
+        if language not in gtts.lang.tts_langs().keys():
             raise ValueError("Language '%s' ('%s') not supported" %
                              (language, orig_language))
 
