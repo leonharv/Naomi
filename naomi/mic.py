@@ -48,7 +48,7 @@ class Mic(object):
         self._output_device = output_device
         self._active_stt_reply = active_stt_reply
         self._active_stt_response = active_stt_response
-        self._input_rate = get_config_value(config, 'input_samplerate', 16000)
+        self._input_rate = get_config_value(config, 'input_samplerate', 48000)
         self._input_bits = get_config_value(config, 'input_samplewidth', 16)
         self._input_channels = get_config_value(config, 'input_channels', 1)
         self._input_chunksize = get_config_value(config, 'input_chunksize',
