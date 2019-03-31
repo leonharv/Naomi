@@ -8,12 +8,16 @@ requests==2.20.0
 blessings
 pyaudio
 pyalsaaudio
+slugify
 
 #other modules
 python-slugify==1.2.5
 
 # Pocketsphinx STT engine
 cmuclmtk==0.1.5
+
+# google tts
+gtts
 
 # HN module
 semantic==1.0.3
